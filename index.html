@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIFlow — AI Employees That Work 24/7 So You Don't Have To</title>
+<meta name="description" content="AIFlow provides AI employees that answer customers, process orders, update inventory, send emails, and automate repetitive work 24/7. Your business should run even while you sleep.">
+<meta name="keywords" content="AI automation, AI employees, e-commerce automation, Shopify automation, WooCommerce automation, business automation, AI chatbot, AI customer support">
+<meta name="author" content="AIFlow">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AIFlow — AI Employees That Work 24/7">
+<meta property="og:description" content="Meet your new AI employees. They answer customers, process orders, update inventory, send emails, and automate repetitive work—24/7.">
+<meta property="og:url" content="https://aiflow.ai">
+<meta property="og:site_name" content="AIFlow">
+<meta property="og:image" content="https://aiflow.ai/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIFlow — AI Employees That Work 24/7">
+<meta name="twitter:description" content="Meet your new AI employees. They answer customers, process orders, update inventory, send emails, and automate repetitive work—24/7.">
+<meta name="twitter:image" content="https://aiflow.ai/og-image.png">
+
+<link rel="canonical" href="https://aiflow.ai">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AIFlow",
+  "url": "https://aiflow.ai",
+  "description": "AI automation company providing AI employees that work 24/7 for e-commerce businesses.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Aurora Background -->
+<div class="aurora" aria-hidden="true">
+  <div class="aurora-blob"></div>
+  <div class="aurora-blob"></div>
+  <div class="aurora-blob"></div>
+</div>
+
+<!-- Particles Canvas -->
+<canvas class="particles-canvas" id="particlesCanvas" aria-hidden="true"></canvas>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="AIFlow Home">AIFlow</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active" data-section="home">Home</a>
+      <a href="#how-it-works" data-section="how-it-works">How It Works</a>
+      <a href="#ai-employees" data-section="ai-employees">AI Employees</a>
+      <a href="#technology" data-section="technology">Technology</a>
+      <a href="#pricing" data-section="pricing">Pricing</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </div>
+    <button class="nav-cta desktop-only" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Book Consultation
+    </button>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#home" onclick="closeMobileMenu()">Home</a>
+  <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+  <a href="#ai-employees" onclick="closeMobileMenu()">AI Employees</a>
+  <a href="#technology" onclick="closeMobileMenu()">Technology</a>
+  <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <button class="btn-primary" style="margin-top:16px" onclick="closeMobileMenu();document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Consultation</button>
+</div>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      AI-Powered Business Automation
+    </div>
+    <h1>Your Business Should Run <span class="gradient-text">Even While You Sleep.</span></h1>
+    <p class="hero-sub">Meet your new AI employees. They answer customers, process orders, update inventory, send emails, and automate repetitive work — 24/7.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">
+        Book Free Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="https://wa.me/" class="btn-secondary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <!-- Hero Workflow Animation -->
+    <div class="hero-workflow">
+      <div class="workflow-chain" id="heroWorkflow">
+        <div class="workflow-step" data-index="0">
+          <div class="step-icon order">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="m1 1 4 0 2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <span>Shopify Order Received</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="1">
+          <div class="step-icon ai">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <span>AI Employee Starts Working</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="2">
+          <div class="step-icon inv">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <span>Inventory Updated</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="3">
+          <div class="step-icon email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span>Email Sent</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="4">
+          <div class="step-icon wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <span>WhatsApp Sent</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="5">
+          <div class="step-icon dash">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <span>Dashboard Updated</span>
+        </div>
+        <div class="workflow-arrow">&#8595;</div>
+        <div class="workflow-step" data-index="6">
+          <div class="step-icon done">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <span>Completed in 3 Seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROBLEM SECTION
+     ============================================ -->
+<section class="section problem-section" id="problem">
+  <div class="container">
+    <div class="section-label">The Problem</div>
+    <h2 class="section-title">Your Team Is Busy Doing Work <span class="gradient-text">AI Can Do Instantly.</span></h2>
+    <p class="section-subtitle">Every hour spent on repetitive tasks is an hour stolen from growth. Here is what is draining your team right now.</p>
+    <div class="problem-grid">
+      <div class="problem-card" data-delay="0">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>Customer Emails</h4>
+        <p>Hours replying to the same questions daily</p>
+      </div>
+      <div class="problem-card" data-delay="80">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>Manual Orders</h4>
+        <p>Processing orders one by one, manually</p>
+      </div>
+      <div class="problem-card" data-delay="160">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>Inventory Checks</h4>
+        <p>Constantly verifying stock across platforms</p>
+      </div>
+      <div class="problem-card" data-delay="240">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>WhatsApp Replies</h4>
+        <p>Responding to customers around the clock</p>
+      </div>
+      <div class="problem-card" data-delay="320">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>Spreadsheet Updates</h4>
+        <p>Copy-pasting data between systems</p>
+      </div>
+      <div class="problem-card" data-delay="400">
+        <div class="problem-icon red">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          <span class="red-dot"></span>
+        </div>
+        <h4>Invoice Creation</h4>
+        <p>Generating invoices by hand every time</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TRANSFORMATION SECTION
+     ============================================ -->
+<section class="section transform-section" id="transformation">
+  <div class="container">
+    <div class="section-label">The Transformation</div>
+    <h2 class="section-title">Imagine Every Task Completing <span class="gradient-text">Automatically.</span></h2>
+    <p class="section-subtitle">What once took hours now happens in seconds. Watch how AI transforms every corner of your business.</p>
+    <div class="transform-grid">
+      <div class="transform-card" data-delay="0">
+        <div class="before">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="card-label">Before</span>
+          <h4>Manual Email Replies</h4>
+          <p>Team spends 4+ hours daily answering emails</p>
+        </div>
+        <div class="transform-arrow">&#8595;</div>
+        <div class="after">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <span class="card-label">After</span>
+          <h4>AI Instant Responses</h4>
+          <p>AI handles 95% of emails in under 10 seconds</p>
+        </div>
+      </div>
+      <div class="transform-card" data-delay="100">
+        <div class="before">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="m1 1 4 0 2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <span class="card-label">Before</span>
+          <h4>Manual Order Processing</h4>
+          <p>Orders processed one at a time by hand</p>
+        </div>
+        <div class="transform-arrow">&#8595;</div>
+        <div class="after">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="card-label">After</span>
+          <h4>AI Auto-Processing</h4>
+          <p>Hundreds of orders processed simultaneously</p>
+        </div>
+      </div>
+      <div class="transform-card" data-delay="200">
+        <div class="before">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <span class="card-label">Before</span>
+          <h4>Stock Discrepancies</h4>
+          <p>Inventory out of sync across stores</p>
+        </div>
+        <div class="transform-arrow">&#8595;</div>
+        <div class="after">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <span class="card-label">After</span>
+          <h4>Real-Time Inventory Sync</h4>
+          <p>All platforms always in perfect sync</p>
+        </div>
+      </div>
+      <div class="transform-card" data-delay="300">
+        <div class="before">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="card-label">Before</span>
+          <h4>Late WhatsApp Replies</h4>
+          <p>Customers wait hours for a response</p>
+        </div>
+        <div class="transform-arrow">&#8595;</div>
+        <div class="after">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <span class="card-label">After</span>
+          <h4>Instant AI Replies</h4>
+          <p>Every message answered in under 5 seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     HOW IT WORKS SECTION
+     ============================================ -->
+<section class="section how-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Connect Everything. <span class="gradient-text">Automate Everything.</span></h2>
+    <p class="section-subtitle">We connect all your business apps so they work automatically. No manual intervention. No delays. Just seamless automation.</p>
+    <div class="how-workflow" id="howWorkflow">
+      <div class="how-step" data-delay="0">
+        <div class="how-step-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <div class="how-step-text">
+          <h4>Shopify / WooCommerce</h4>
+          <p>Orders and customer data flow in automatically</p>
+        </div>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-delay="80">
+        <div class="how-step-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </div>
+        <div class="how-step-text">
+          <h4>AIFlow Engine</h4>
+          <p>Our AI brain analyzes and routes every task</p>
+        </div>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-delay="160">
+        <div class="how-step-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <div class="how-step-text">
+          <h4>AI Agent</h4>
+          <p>Specialized AI handles each task intelligently</p>
+        </div>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-delay="240">
+        <div class="how-step-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="how-step-text">
+          <h4>Automation Layer</h4>
+          <p>Workflows execute across all your tools</p>
+        </div>
+      </div>
+      <div class="how-connector"></div>
+      <div class="how-step" data-delay="320">
+        <div class="how-step-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="how-step-text">
+          <h4>Inventory, CRM, Email, WhatsApp, Analytics</h4>
+          <p>Everything stays perfectly synchronized</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Powered By -->
+    <div class="powered-by">
+      <span class="powered-by-label">Powered by</span>
+      <span class="tech-pill">n8n</span>
+      <span class="tech-pill">OpenAI</span>
+      <span class="tech-pill">Claude</span>
+      <span class="tech-pill">Gemini</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     AI EMPLOYEES SECTION
+     ============================================ -->
+<section class="section employees-section" id="ai-employees">
+  <div class="container">
+    <div class="section-label">AI Employees</div>
+    <h2 class="section-title">Meet Your New <span class="gradient-text">AI Employees.</span></h2>
+    <p class="section-subtitle">Each one is a specialist. They never sleep, never take breaks, and never make the same mistake twice.</p>
+    <div class="employees-grid">
+      <div class="employee-card" data-delay="0">
+        <div class="employee-icon blue">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>AI Customer Support</h3>
+        <p>Replies instantly to every customer inquiry with accurate, on-brand responses. Learns from your knowledge base.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="80">
+        <div class="employee-icon purple">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>AI Chatbot</h3>
+        <p>Engages visitors on your website, answers questions, qualifies leads, and guides them to purchase — works 24/7.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="160">
+        <div class="employee-icon cyan">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="m1 1 4 0 2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <h3>AI Order Manager</h3>
+        <p>Processes orders automatically, handles cancellations, and routes exceptions to the right team member.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="240">
+        <div class="employee-icon green">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>AI Inventory Manager</h3>
+        <p>Keeps stock synchronized across Shopify, WooCommerce, warehouses, and marketplaces in real-time.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="320">
+        <div class="employee-icon amber">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>AI Email Assistant</h3>
+        <p>Sends order confirmations, shipping updates, follow-ups, and marketing emails — all personalized automatically.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="400">
+        <div class="employee-icon rose">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f43f5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>AI Voice Agent</h3>
+        <p>Answers customer calls, handles inquiries, routes complex issues — sounds natural and professional.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="480">
+        <div class="employee-icon green">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        </div>
+        <h3>WhatsApp AI Assistant</h3>
+        <p>Responds to customers on WhatsApp instantly, handles orders, and provides tracking info automatically.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+      <div class="employee-card" data-delay="560">
+        <div class="employee-icon blue">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Multi-Agent Team</h3>
+        <p>Multiple AI employees collaborating together — handling complex workflows that require coordination across systems.</p>
+        <div class="employee-tag"><span class="tag-dot"></span> Active 24/7</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TECHNOLOGY SECTION
+     ============================================ -->
+<section class="section tech-section" id="technology">
+  <div class="container">
+    <div class="section-label">Technology Stack</div>
+    <h2 class="section-title">Built on the <span class="gradient-text">Most Powerful AI.</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Our AI brain connects to the best technologies in the world, creating a unified intelligence for your business.</p>
+    <div class="orbit-container" id="orbitContainer">
+      <div class="orbit-center"><span>AIFlow</span></div>
+      <div class="orbit-ring" id="orbitRing1"></div>
+      <div class="orbit-ring" id="orbitRing2"></div>
+      <div class="orbit-ring" id="orbitRing3"></div>
+      <div class="orbit-ring" id="orbitRing4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PRICING SECTION
+     ============================================ -->
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-label">Pricing</div>
+    <h2 class="section-title">Choose Your <span class="gradient-text">AI Team Size.</span></h2>
+    <p class="section-subtitle" style="margin:0 auto 0">Start small. Scale fast. Every plan includes dedicated support and custom workflows tailored to your business.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card" data-delay="0">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-price">$497<span>/mo</span></div>
+        <p class="pricing-desc">Perfect for small stores ready to automate.</p>
+        <ul class="pricing-features">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 1 AI Workflow</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> 2 Integrations</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> WhatsApp Support</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Email Support</li>
+        </ul>
+        <button class="pricing-btn outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+      <div class="pricing-card popular" data-delay="120">
+        <div class="animated-border"></div>
+        <span class="pricing-popular-badge">Most Popular</span>
+        <div class="pricing-name">Growth</div>
+        <div class="pricing-price">$997<span>/mo</span></div>
+        <p class="pricing-desc">For growing brands ready to scale with AI.</p>
+        <ul class="pricing-features">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited Workflows</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> AI Chatbot</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Email Automation</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Inventory Automation</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Priority Support</li>
+        </ul>
+        <button class="pricing-btn primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </div>
+      <div class="pricing-card" data-delay="240">
+        <div class="pricing-name">Enterprise</div>
+        <div class="pricing-price">Custom</div>
+        <p class="pricing-desc">For businesses that need a full AI workforce.</p>
+        <ul class="pricing-features">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Multi-Agent AI</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Custom Development</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Dedicated Support</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> API Integrations</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> SLA Guarantee</li>
+        </ul>
+        <button class="pricing-btn outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Sales</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT SECTION
+     ============================================ -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-label">Get Started</div>
+    <h2 class="section-title">Ready to Hire Your <span class="gradient-text">First AI Employee?</span></h2>
+    <p class="section-subtitle">Book a free consultation and see how AI can transform your business in under 30 days.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p>+1 (555) 000-0000</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="#25D366" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>Chat with us instantly</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div>
+            <h4>Book a Consultation</h4>
+            <p>Schedule a free 30-min call</p>
+          </div>
+        </div>
+        <a href="https://wa.me/" target="_blank" rel="noopener" class="btn-primary" style="margin-top:8px;justify-content:center">
+          Chat on WhatsApp
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        </a>
+        <div class="map-placeholder">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Google Maps Embed Placeholder
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label for="service">What Do You Need?</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="customer-support">AI Customer Support</option>
+            <option value="chatbot">AI Chatbot</option>
+            <option value="order-management">AI Order Management</option>
+            <option value="inventory">AI Inventory Management</option>
+            <option value="email">AI Email Automation</option>
+            <option value="whatsapp">WhatsApp AI Assistant</option>
+            <option value="multi-agent">Multi-Agent Team</option>
+            <option value="custom">Custom Solution</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell Us About Your Business</label>
+          <textarea id="message" name="message" placeholder="What tasks take up most of your team's time?"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary" style="justify-content:center;width:100%">Book Free Consultation</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">AIFlow</div>
+        <p>AI employees that work 24/7 so your team can focus on growing the business. The future of work is automated.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#ai-employees">AI Employees</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#technology">Technology</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#home">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#">WhatsApp</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 AIFlow. All rights reserved.</span>
+      <span>Privacy Policy &middot; Terms of Service</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
