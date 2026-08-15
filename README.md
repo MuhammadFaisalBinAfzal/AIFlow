@@ -29,20 +29,19 @@ The architecture completely separates structural markup, styling, and interactiv
 
 <div align="center">
   <img src="assets/screenshots/hero-section.png" alt="Hero Section Overview" width="800" />
-  <p><em>The hero section highlighting the primary value proposition. (Replace with actual screenshot)</em></p>
+  <p><em>The hero section highlighting the primary value proposition.</em></p>
 </div>
 
 <div align="center">
   <img src="assets/screenshots/features-section.png" alt="AI Employees Feature Grid" width="800" />
-  <p><em>The AI Employees grid demonstrating specialized use cases. (Replace with actual screenshot)</em></p>
+  <p><em>The AI Employees grid demonstrating specialized use cases.</em></p>
 </div>
 
 <div align="center">
   <img src="assets/screenshots/workflow-automation.png" alt="Workflow Automation Flowchart" width="800" />
-  <p><em>The horizontal 'How It Works' automation flowchart. (Replace with actual screenshot)</em></p>
+  <p><em>The horizontal 'How It Works' automation flowchart.</em></p>
 </div>
 
-*(Note: Add your high-resolution images to `assets/screenshots/` and update the paths above.)*
 
 ## Architecture & Code Analysis
 
